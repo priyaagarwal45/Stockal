@@ -10,10 +10,12 @@ import ProductStore from './store';
 const { Header, Sider, Content } = Layout;
 const Option = Select.Option;
 
+// component to display all products
 @observer
 class Product extends Component {
     state = { visible: false }
 
+    //function to open pop-up
     showModal = () => {
         ProductStore.size = this.props.product.sizes.split(",");
         this.setState({
@@ -22,6 +24,7 @@ class Product extends Component {
        
     }
 
+    //function to add product to cart
     handleOk = (e) => {
         this.setState({
             visible: false,
@@ -37,6 +40,7 @@ class Product extends Component {
     }
     }
 
+    //function to close pop-up
     handleCancel = (e) => {
         this.setState({
             visible: false,
@@ -92,6 +96,8 @@ class Product extends Component {
         ]
     }
 }
+
+// component for items in cart
 @observer
 class selectedProduct extends Component {
     
@@ -111,6 +117,8 @@ class selectedProduct extends Component {
         ]
     }
 }
+
+// main page component
 @observer
 class LandingPage extends Component {
     componentWillMount() {
