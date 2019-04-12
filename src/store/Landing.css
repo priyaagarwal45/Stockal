@@ -1,0 +1,56 @@
+.top-left {
+    color: #FFF;
+    width: 360px;
+    padding: 0px 16px;
+    position: absolute;
+}
+.top-left .logo{
+    height: 66px;
+}
+.top-left .logo img{
+    width: 210px;
+    height:  68px;
+    position:  relative;
+    left:  50%;
+    transform: translateX(-50%);
+}
+.top-middle{
+    position: absolute;
+    float:right;
+    right:100px;
+    color: white;
+}
+.top-right h3{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    float: right;
+    color: white;
+}
+.fixed-header-content {
+    position: fixed;
+    width: 100%;
+    z-index: 10129102910;
+}
+.ant-layout.main-content {
+    margin-top: 65px;
+    margin-left: 50px;
+}
+fieldset {
+    background:white;
+    border: solid 1px #CCC;
+    position: relative;
+    padding: 10px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.fixed-map-content{
+    display: flex;
+  flex-flow: row wrap;
+ 
+}
